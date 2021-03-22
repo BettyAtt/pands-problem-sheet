@@ -13,6 +13,8 @@ today = datetime.date.today()
 # create tuple for weekdays
 weekDays = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 
+# how to find an element in a tuple
+# https://thispointer.com/python-how-to-find-an-element-in-tuple-by-value/
 if today in weekDays:
     print("Yes, unfortunately, today is a weekday.")
 else:
