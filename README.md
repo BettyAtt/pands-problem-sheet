@@ -44,15 +44,22 @@ The output  is their weight divided by their height in metres squared.
 
 
 ### Code:
->`height = float (input ('Enter your height in cm: '))
->weight = float (input ('Enter your weight in kg: '))
->metersquared = (height/100)**2
->BMI = round(weight / metersquared, 2)
->print('Your BMI is {}'.format(BMI))`
+    height = float (input ('Enter your height in cm: '))
+    weight = float (input ('Enter your weight in kg: '))
+    metersquared = (height/100)**2
+    BMI = round(weight / metersquared, 2)
+    print('Your BMI is {}'.format(BMI))
 
 ### Explaining the Code:
+1. The user is prompted to enter height and weight as a float. 
+2. The entered weight is divided by the entered height in meters to the power of two.
+3. The output is printed. The code `.format(BMI)` fills in the placeholder `{}`with the BMI variable which calculates the BMI using the formula utilising the users inputs.
 
 ### References:
+1. w3schools.com. 2020. Python String format() Method. [online] Available at: https://www.w3schools.com/python/ref_string_format.asp [Accessed 31 January 2021].
+2. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 31 January 2021].
+3. Tintumon, M., M, K., Visser, S. and Nath, A., 2021. BMI Calculator In Python. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/20405610/bmi-calculator-in-python/20405792 [Accessed 31 January 2021].
+4. Diabetes Canada. 2021. How to Calculate Body Mass Index. Available at: https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator#:~:text=Body%20Mass%20Index%20is%20a,range%20is%2018.5%20to%2024.9. [Accessed 31 January 2021].
 
 # Task 3:
 
