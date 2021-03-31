@@ -68,54 +68,90 @@ ___
 ### Task Description:
 Write a program that takes asks a user to input a string and outputs every second letter in reverse order.
 
->$ python secondstring.py
->Please enter a sentence: The quick brown fox jumps over the lazy dog.
->.o zletrv pu o wr cu h
+>$ python secondstring.py  
+>Please enter a sentence: The quick brown fox jumps over the lazy dog.  
+>.o zletrv pu o wr cu h  
 
 ### Code:
+    rawString = input("please enter a sentence:")
+    print(rawString[::-2])
 
 ### Explaining the Code:
+1. The user is asked to enter a sentence (string).
+2. The code counts the length of string and outputs every second letter in reverse order.  
+
+Example: 
+
+- Please enter a sentence: The quick brown fox jumps over the 
+lazy dog.
+- Output: .o zletrv pu o wr cu h
+
+3. The syntax is `s[start:stop:step]` When the start position is left blank the default start position is 0. When the stop position is left blank the default is the length of the string.
+4. The string order is reversed by use of a negative in the step position. The code `:-2`selects every other character beginning at the end of the string and prints out these characters.
 
 ### References:
+1. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., List Indexing and Splicing, p.32-34. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 7 February 2021].
+2. Pankaj. 2019. JournalDev Available from: https://www.journaldev.com/23584/python-slice-string#:~:text=The%20slicing%20starts%20with%20the,for%20any%20index%20 [Accessed 7 February 2021]
+3. Learn by Example. 2019. Available from: https://www.learnbyexample.org/python-string-slicing/ [Accessed 7 February 2021]
+4. w3schools.com. 2021. Python - Slicing Strings. Available at: https://www.w3schools.com/python/python_strings_slicing.asp  [Accessed 7 February 2021].
 
 # Task 4:
 
 ___
 
 ### Task Description:
-Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
+Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.  
 
-At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
+At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.  
 
-Have the program end if the current value is one.
+Have the program end if the current value is one.  
 
->$ python collatz.py
->Please enter a positive integer: 10
->10 5 16 8 4 2 1
+>$ python collatz.py  
+>Please enter a positive integer: 10  
+>10 5 16 8 4 2 1  
 
 ### Code:
+    number = int(input("enter a positive integer: "))
+    while number <= 0:
+        print("Error!")
+        number = int(input("enter a positive integer: "))
+
+    numbers = [] 
+    numbers.append(int(number)) 
+
+    while number != 1:
+        if number % 2 == 0:
+           number = number / 2 
+        # this increment prevents loop continuing forever
+        else:
+            number = ((number * 3) + 1)
+        numbers.append(int(number))
+
+    print(numbers)
 
 ### Explaining the Code:
 
 ### References:
-
+1. https://www.w3schools.com/python/python_while_loops.asp
+2. https://www.w3schools.com/python/ref_list_append.asp
+3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-40. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 7 February 2021].
 # Task 5:
 
 ___
 
 ### Task Description:
-Write a program that outputs whether or not today is a weekday.
+Write a program that outputs whether or not today is a weekday.  
 
-(You will need to search the web to find how you work out what day it is)
+(You will need to search the web to find how you work out what day it is)  
 
-An example of running this program on a Thursday is given below.
+An example of running this program on a Thursday is given below.  
 
->$ python weekday.py
->Yes, unfortunately today is a weekday.
+>$ python weekday.py  
+>Yes, unfortunately today is a weekday.  
 
->An example of running it on a Saturday is as follows:
->$ python weekday.py
->It is the weekend, yay!
+>An example of running it on a Saturday is as follows:  
+>$ python weekday.py  
+>It is the weekend, yay!  
 
 ### Code:
 
@@ -142,9 +178,9 @@ I suggest that you look at the newton method at estimating square roots.
 This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
 
 
->$ python squareroot.py
->Please enter a positive number: 14.5
->The square root of 14.5 is approx. 3.8.
+>$ python squareroot.py  
+>Please enter a positive number: 14.5  
+>The square root of 14.5 is approx. 3.8.  
 
 ### Code:
 
@@ -161,8 +197,8 @@ Write a program that reads in a text file and outputs the number of e's it conta
 
 The program should take the filename from an argument on the command line.
 
->$ python es.py moby-dick.txt
->116960
+>$ python es.py moby-dick.txt  
+>116960  
 
 ### Code:
 
