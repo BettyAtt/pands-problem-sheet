@@ -10,7 +10,7 @@ ___
 
 ___
 
-This ReadMe explains how the code works and provides references used to complete the weekly tasks for Programming and Scripting module for GMIT's Computer Science Data Analytics postgraduate degree. 
+This ReadMe explains how the code used to complete the weekly tasks for GMIT's Programming and Scripting module works and provides references. This assignment is part of the work done  to complete GMIT's Computer Science Data Analytics postgraduate degree. 
 
 # Task 1:
 
@@ -56,10 +56,10 @@ The output  is their weight divided by their height in metres squared.
 3. The output is printed. The code `.format(BMI)` fills in the placeholder `{}`with the BMI variable which calculates the BMI using the formula utilising the users inputs.
 
 ### References:
-1. w3schools.com. 2020. Python String format() Method. [online] Available at: https://www.w3schools.com/python/ref_string_format.asp [Accessed 31 January 2021].
-2. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 31 January 2021].
-3. Tintumon, M., M, K., Visser, S. and Nath, A., 2021. BMI Calculator In Python. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/20405610/bmi-calculator-in-python/20405792 [Accessed 31 January 2021].
-4. Diabetes Canada. 2021. How to Calculate Body Mass Index. Available at: https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator#:~:text=Body%20Mass%20Index%20is%20a,range%20is%2018.5%20to%2024.9. [Accessed 31 January 2021].
+1. w3schools.com. 2020. *Python String format() Method*. [online] Available at: https://www.w3schools.com/python/ref_string_format.asp [Accessed 31 January 2021].
+2. Vanderplas, J., n.d. 2016. *A Whirlwind Tour Of Python*. O'Reilly Media Inc. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 31 January 2021].
+3. Tintumon, M., M, K., Visser, S. and Nath, A., 2021. *BMI Calculator In Python*. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/20405610/bmi-calculator-in-python/20405792 [Accessed 31 January 2021].
+4. Diabetes Canada. 2021. *How to Calculate Body Mass Index*. Available at: https://www.diabetes.ca/managing-my-diabetes/tools---resources/body-mass-index-(bmi)-calculator#:~:text=Body%20Mass%20Index%20is%20a,range%20is%2018.5%20to%2024.9. [Accessed 31 January 2021].
 
 # Task 3:
 
@@ -90,10 +90,10 @@ lazy dog.
 4. The string order is reversed by use of a negative in the step position. The code `:-2`selects every other character beginning at the end of the string and prints out these characters.
 
 ### References:
-1. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., List Indexing and Splicing, p.32-34. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 7 February 2021].
-2. Pankaj. 2019. JournalDev Available from: https://www.journaldev.com/23584/python-slice-string#:~:text=The%20slicing%20starts%20with%20the,for%20any%20index%20 [Accessed 7 February 2021]
-3. Learn by Example. 2019. Available from: https://www.learnbyexample.org/python-string-slicing/ [Accessed 7 February 2021]
-4. w3schools.com. 2021. Python - Slicing Strings. Available at: https://www.w3schools.com/python/python_strings_slicing.asp  [Accessed 7 February 2021].
+1. Vanderplas, J., n.d. 2016. *A Whirlwind Tour Of Python*. O'Reilly Media Inc., List Indexing and Splicing, p.32-34. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 7 February 2021].
+2. Pankaj. 2019. *Python Slice String* in *JournalDev* Available from: https://www.journaldev.com/23584/python-slice-string#:~:text=The%20slicing%20starts%20with%20the,for%20any%20index%20 [Accessed 7 February 2021]
+3. Learn by Example. 2019. *Python String Slicing* Available from: https://www.learnbyexample.org/python-string-slicing/ [Accessed 7 February 2021]
+4. w3schools.com. 2021. *Python - Slicing Strings*. Available at: https://www.w3schools.com/python/python_strings_slicing.asp  [Accessed 7 February 2021].
 
 # Task 4:
 
@@ -134,10 +134,10 @@ Have the program end if the current value is one.
 3. Another while loop is used to direct the actions as long as the number is not 1. While the number is not 1: If the number is positive (calculated by `if collat % 2 == 0:`) then the number is divided by 2. If the number is not even, the else loop kicks in `collat = ((collat * 3) + 1)` and the number is multiplied by three then 1 is added to it. The results of each calculation is added to the array by the code `collatz.append(int(collat))` at the end of the while loop. 4. The numbers appended to the array are printed `print(collatz)`.
 
 ### References:
-1. w3schools.com 2021. Available at:https://www.w3schools.com/python/python_while_loops.asp [Accessed 14 February 2021].
-2. w3schools.com 2021. Available at: https://www.w3schools.com/python/ref_list_append.asp [Accessed 14 February 2021].
-3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
-4. w3resource.com 2020. Python Challenges: 3n + 1 Problem. Available at: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php [Accessed 14 February 2021].
+1. w3schools.com 2021. *Python While Loops* Available at:https://www.w3schools.com/python/python_while_loops.asp [Accessed 14 February 2021].
+2. w3schools.com 2021. *Ref List Append* Available at: https://www.w3schools.com/python/ref_list_append.asp [Accessed 14 February 2021].
+3. Vanderplas, J., n.d. 2016. *A Whirlwind Tour Of Python*. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
+4. w3resource.com 2020. *Python Challenges: 3n + 1 Problem*. Available at: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php [Accessed 14 February 2021].
 
 # Task 5:
 
@@ -176,9 +176,9 @@ An example of running this program on a Thursday is given below.
 4. This means we can use Python's built in logic such as greater than and less than to determine whether the current date is a week day or weekend. The code uses the code `if weekDay < 6` and `else:` to print out the appropriate responses. 
 
 ### References:
-1. Sweigart, A. 2015. Chapter 15 Keeping Time in Automate the Boring Stuff with Python. San Francisco: No Starch Press, pp.341-146. 
-2. Python Docs. 2021. Datetime Module. Available at: https://docs.python.org/3/library/datetime.html. [Accessed 06 April 2021]. 
-3. w3schools.com 2020. Python Dates. Available at: https://www.w3schools.com/python/python_datetime.asp. [Accessed 21 February 2021].
+1. Sweigart, A. 2015. Chapter 15 Keeping Time in *Automate the Boring Stuff with Python*. San Francisco: No Starch Press, pp.341-146. 
+2. Python Docs. 2021. *Datetime Module*. Available at: https://docs.python.org/3/library/datetime.html. [Accessed 06 April 2021]. 
+3. w3schools.com 2020. *Python Dates*. Available at: https://www.w3schools.com/python/python_datetime.asp. [Accessed 21 February 2021].
 
 # Task 6:
 
@@ -232,11 +232,11 @@ I suggest that you look at the newton method at estimating square roots.
 
 
 ### References:
-1.  Açıl, Sıddık. Newton Square Root Method in Python. Available at: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d [Accessed March 14, 2021].
-2. Sweigart, A. 2015. Chapter 3: Functions in Automate the Boring Stuff with Python.  San Francisco: No Starch Press, pp.61-79. 
-3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
-4. Kurtus, Ron. 2012. The School for Champions. Newton's Square Root Approximation. Available at: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YGwVBK9KjIW [Accessed: March 21, 2021].
-5. w3schools.com. 2021. Python Functions. Available at: https://www.w3schools.com/python/python_functions.asp [Date Accessed: 21 March 2021].
+1.  Açıl, Sıddık. *Newton Square Root Method in Python*. Available at: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d [Accessed March 14, 2021].
+2. Sweigart, A. 2015. Chapter 3: Functions in *Automate the Boring Stuff with Python*.  San Francisco: No Starch Press, pp.61-79. 
+3. Vanderplas, J., n.d. 2016. *A Whirlwind Tour Of Python*. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
+4. Kurtus, Ron. 2012. The School for Champions. *Newton's Square Root Approximation*. Available at: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YGwVBK9KjIW [Accessed: March 21, 2021].
+5. w3schools.com. 2021. *Python Functions.* Available at: https://www.w3schools.com/python/python_functions.asp [Date Accessed: 21 March 2021].
 
 # Task 7:
 
@@ -274,11 +274,11 @@ by Herman Melville. The text analysed began at Chapter 1  and the epilogue was i
 
 
 ### References:
-1. Melville, Herman. Moby Dick [Etext]. The Gutenberg Press. Available at: https://www.gutenberg.org/files/2701/old/moby10b.txt . [Date Accessed: 24 March 2021].
-2. Programiz.com. 2021. Python String Count () Available at: https://www.programiz.com/python-programming/methods/string/count [Date Accessed: 25 March 2021].
-3. w3schools.com. 2021. Python String count() Method. Available at : https://www.w3schools.com/python/ref_string_count.asp [Date Accessed: 24 March 2021].
-4. McKinney, T and Jsbueno. Stackoverflow.com. How many times a substring occurs. Available at: https://stackoverflow.com/questions/8899905/how-many-times-a-substring-occurs [Date Accessed: 25 March 2021].
-4. Pythonexamples.org. 2020. How To Count Number Of Characters In Text File? – 2 Python Examples. [online] Available at: https://pythonexamples.org/python-count-number-of-characters-in-text-file/ [Accessed 29 March 2020].
+1. Melville, Herman. *Moby Dick [Etext]*. The Gutenberg Press. Available at: https://www.gutenberg.org/files/2701/old/moby10b.txt . [Date Accessed: 24 March 2021].
+2. Programiz.com. 2021. *Python String Count ()* Available at: https://www.programiz.com/python-programming/methods/string/count [Date Accessed: 25 March 2021].
+3. w3schools.com. 2021. *Python String count() Method.* Available at : https://www.w3schools.com/python/ref_string_count.asp [Date Accessed: 24 March 2021].
+4. McKinney, T and Jsbueno. Stackoverflow.com. *How many times a substring occurs.* Available at: https://stackoverflow.com/questions/8899905/how-many-times-a-substring-occurs [Date Accessed: 25 March 2021].
+4. Pythonexamples.org. 2020. *How To Count Number Of Characters In Text File? – 2 Python Examples.* [online] Available at: https://pythonexamples.org/python-count-number-of-characters-in-text-file/ [Accessed 29 March 2020].
 
 # Task 8:
 
@@ -320,14 +320,17 @@ Some marks will be given for making the plot look nice.
 
 ### Explaining the Code:
 1. Matplotlib and NumPy are imported. "Matplotlib is a plotting library for Python. It is used along with NumPy to provide an environment that is an effective open source alternative for MatLab" (tutorialspoint).
-2. The x axis values are defined by code: `x=np.arange(0.0,4.0,1.0)`. The syntax is:  
-> numpy.arange([start, ]stop, [step, ], dtype=None) 
+2. The x axis values are defined by code: `x=np.arange(0.0,4.0,1.0)`.  
+The syntax is:  
+> numpy.arange([start, ]stop, [step, ], dtype=None)  
+
 Start is the first value in the array, in this case 0.0; Stop defines the end of the array and isn't a part of the array. Step is the spacing between two consecutive values in the array and the default is 1. dtype is the type of elements in the output of the array, the default is none if not specified as in my code (see Stojiljković).
 3. The y coordinates are determined as per the function given to plot: f(x)=x, g(x)=x<sup>2</sup> and h(x)=x<sup>3</sup>. Broken down into the three y axis plot points:   
-    y1 = x     # f(x)  
-    y2 = x**2  # g(x)  
-    y3 = x**3  # h(x)
-
+```
+y1 = x     which represents f(x)  
+y2 = x**2  which represents  g(x)  
+y3 = x**3  which represents  h(x)
+```
 4. Next `plt.plot(y1, ...` is used to direct the program to plot each of the points. Within the brackets are customisable features such as colour, line with, line type, marker type, color, fill, etc. I used the fmt shortcut string notations to specify the marker which uses abbrevations to denote the marker-line-color `'d-m'`, but then specify more details such as line width `lw` , marker size `ms`, marker edge color `mec`, market fill color `mfc` and finally add a label. Customisation options were found at w3schools.
 5. I then added the plot title,  `plt.title()`, as well as axis labels, e.g. `plt.xlabel()`
 6.  The code then creates a legend `plt.legend()` which displays labels.
