@@ -158,13 +158,27 @@ An example of running this program on a Thursday is given below.
 >It is the weekend, yay!  
 
 ### Code:
+    import datetime
+
+    today = datetime.date.today()
+    print("Today is ", today.strftime("%A"))
+
+    weekDay = datetime.datetime.today().isoweekday()
+    if weekDay < 6:
+        print("Yes, unfortunately, today is a weekday.")
+    else:
+        print("It is the weekend, yay!")
 
 ### Explaining the Code:
+1. Firstly, the python module date time is imported.
+2. The code `today = datetime.date.today()` returns the date time object for the specified time today which returns time at current location.
+3. The variable weekDay returns the days of the weeks assigned integer values. The code `.isoweekday()` assigns Monday the value of 1, Tuesday the value of 2, etc. 
+4. This means we can use Python's built in logic such as greater than and less than to determine whether the current date is a week day or weekend. The code uses the code `if weekDay < 6` and `else:` to print out the appropriate responses. 
 
 ### References:
-1. w3schools.com 2020. Python Dates. Available at: https://www.w3schools.com/python/python_datetime.asp. [Accessed 21 February 2021].
+1. Sweigart, A. 2015. Chapter 15 Keeping Time in Automate the Boring Stuff with Python. San Francisco: No Starch Press, pp.341-146. 
 2. Python Docs. 2021. Datetime Module. Available at: https://docs.python.org/3/library/datetime.html. [Accessed 06 April 2021]. 
-3. Sweigart, A. 2015. Automate the Boring Stuff with Python. San Francisco: No Starch Press.
+3. w3schools.com 2020. Python Dates. Available at: https://www.w3schools.com/python/python_datetime.asp. [Accessed 21 February 2021].
 
 # Task 6:
 
@@ -181,18 +195,48 @@ This is to demonstrate that you can research and code a process (If you really n
 
 I suggest that you look at the newton method at estimating square roots.
 
-This is a more difficult task than some of the others, but will be marked equally, so only do as much work on this as you feel comfortable.
-
-
 >$ python squareroot.py  
 >Please enter a positive number: 14.5  
 >The square root of 14.5 is approx. 3.8.  
 
 ### Code:
+    def NewtonMethod_sqrt(number, number_iters = 5):
+        a = float(number) # number program gets square root of
+        for i in range(number_iters):
+            number = 0.5 * (number + a / number)
+        # Medium reference: x_(n+1) = 0.5 * (x_n +a / x_n)
+        return number
+
+    n = float(input("Enter a positive number: "))
+    if n < 0:
+        print("Please enter a positive number")
+
+    else:
+        answer = (NewtonMethod_sqrt(n))
+        print("The approximate square root of {} is ".format(n) + str(round(answer,1)))
 
 ### Explaining the Code:
+1. The function is defined using the Newton method, as suggested in task prompt. The code relating to this method is largely influenced by  Sıddık Açıl's code although other sources were consulted and the method for defining a function was influenced A Whirlwind Guide to Python and w3schools. This source was influential as many other sources were focused on the mathematical elements of the equations rather than the code.
+2. The number of iterations were chosen as 5 as one-three iterations provide unreliable answers when I did several test runs of the program. E.g. One iteration of the square root of 14.5 results in 7.8. Two iterations results in 4.8. Three iterations results in Three iterations results in 3.9, four iternations and above result in 3.8. A number over 5 did not seem to return more accurate results as my tests were not dealing with long floaing numbers. Further research would be needed to determine the best number of iterations to use.
+3. The newton formula is then run with code: `number = 0.5 * (number + a / number)`. This is based off the Newton Method algebra: x_(n+1) = 0.5 * (x_n +a / x_n) [see Açıl]. And the number is returned. 
+4. Now that Newton's method is defined, code is written asking for the user to input a positive integer: `n = float(input("Enter a positive number: "))`.
+5. To prevent a user from entering a negative integer, the following if condition is used:  
+ `if n < 0:
+    print("Please enter a positive number")`  
+6. Else is used to prompted the program to take the positive integar input and run the aboved defined Newton Method of calculating square root.
+7. The program prints out answer formatted as a string which contains the original input and the answer rounded to one decimal place.
+8. Example input and output:  
+    - Input: 15.3
+    - Output: 3.9
+
+
 
 ### References:
+1.  Açıl, Sıddık. Newton Square Root Method in Python. Available at: https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d [Accessed March 14, 2021].
+2. Sweigart, A. 2015. Chapter 3: Functions in Automate the Boring Stuff with Python.  San Francisco: No Starch Press, pp.61-79. 
+3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
+4. Kurtus, Ron. 2012. The School for Champions. Newton's Square Root Approximation. Available at: https://www.school-for-champions.com/algebra/square_root_approx.htm#.YGwVBK9KjIW [Accessed: March 21, 2021].
+5. w3schools.com. 2021. Python Functions. Available at: https://www.w3schools.com/python/python_functions.asp [Date Accessed: 21 March 2021].
 
 # Task 7:
 
