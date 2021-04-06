@@ -111,30 +111,34 @@ Have the program end if the current value is one.
 >10 5 16 8 4 2 1  
 
 ### Code:
-    number = int(input("enter a positive integer: "))
-    while number <= 0:
+    collat = int(input("enter a positive integer: "))
+    while collat <= 0:
         print("Error!")
-        number = int(input("enter a positive integer: "))
+        collat = int(input("enter a positive integer: "))
 
-    numbers = [] 
-    numbers.append(int(number)) 
+    collatz = [] 
+    collatz.append(int(collat)) 
 
-    while number != 1:
-        if number % 2 == 0:
-           number = number / 2 
-        # this increment prevents loop continuing forever
-        else:
-            number = ((number * 3) + 1)
-        numbers.append(int(number))
+    while collat != 1:
+        if collat % 2 == 0:
+           collat = collat / 2 
+        elif:
+            collat = ((collat * 3) + 1)
+        collatz.append(int(collat))
 
-    print(numbers)
+    print(collatz)
 
 ### Explaining the Code:
+1. The user is asked to input a positive number. A while loop is used to prevent the user from inputting a negative number. If a number less than zero is enter "Error!" is printed and user is asked to input a positive integer again.
+2. The inputted number is appended to the array `collatz = []` 
+3. Another while loop is used to direct the actions as long as the number is not 1. While the number is not 1: If the number is positive (calculated by `if collat % 2 == 0:`) then the number is divided by 2. If the number is not even, the else loop kicks in `collat = ((collat * 3) + 1)` and the number is multiplied by three then 1 is added to it. The results of each calculation is added to the array by the code `collatz.append(int(collat))` at the end of the while loop. 4. The numbers appended to the array are printed `print(collatz)`.
 
 ### References:
-1. https://www.w3schools.com/python/python_while_loops.asp
-2. https://www.w3schools.com/python/ref_list_append.asp
-3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-40. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 7 February 2021].
+1. w3schools.com 2021. Available at:https://www.w3schools.com/python/python_while_loops.asp [Accessed 14 February 2021].
+2. w3schools.com 2021. Available at: https://www.w3schools.com/python/ref_list_append.asp [Accessed 14 February 2021].
+3. Vanderplas, J., n.d. 2016. A Whirlwind Tour Of Python. O'Reilly Media Inc., While loops, p.39-45. Available at: https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf [Accessed 14 February 2021].
+4. w3resource.com 2020. Python Challenges: 3n + 1 Problem. Available at: https://www.w3resource.com/python-exercises/challenges/1/python-challenges-1-exercise-23.php [Accessed 14 February 2021].
+
 # Task 5:
 
 ___
