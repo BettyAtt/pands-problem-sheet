@@ -251,10 +251,34 @@ The program should take the filename from an argument on the command line.
 >116960  
 
 ### Code:
+    txtfile = str(input("Insert .txt File Name: "))
+
+    with open (txtfile, "r") as f:
+        data = f.read()
+        freq = data.count("e") 
+        freq2 = data.count("E") 
+        combo=int(freq + freq2) 
+        print("The combined number of uppercase and lowercase e's in Moby Dick: ", combo)
 
 ### Explaining the Code:
+1. This program reads in a file MobyDick.txt and outputs the combined numbers of lower and upper case e's. For this task, I utilised The Gutenberg Press Etext of Moby Dick
+by Herman Melville. The text analysed began at Chapter 1  and the epilogue was included. No preface material or title page was included in calculations. 
+2. The user is asked to input the name of the txt file as string.
+3. The text file is opened using the `with open` method of opening files in Python which automatically closes them when the program completes its run. The function returns the file in read mode `(txtfile, "r") as f` and refers to the txtfile as f.
+4.  The variable data is defined as reading the specified file.
+5. The python string count() method returns the number of occurences of the specified substring 'e' in the given string 'data' as freq. This is then repeated with "E" as freq2.
+6. These two counts are added together to get the combined number of times "e" and "E" occurs in the txt file and formatted as int. The problem did not specify whether to solve just for lowercase or uppercase, so a combination method was chosen and then individual counts for upper and lower case can easily be isolated.
+7. This variable combo is printed out with a string explaining the significance of the number.
+8. In an early iternation I double checked the outputs for 'e' is 114114, and 'E' is 906 . The combined answer that prints out for my example txt document moby-dick.txt is 115020. 
+
+
 
 ### References:
+1. Melville, Herman. Moby Dick [Etext]. The Gutenberg Press. Available at: https://www.gutenberg.org/files/2701/old/moby10b.txt . [Date Accessed: 24 March 2021].
+2. Programiz.com. 2021. Python String Count () Available at: https://www.programiz.com/python-programming/methods/string/count [Date Accessed: 25 March 2021].
+3. w3schools.com. 2021. Python String count() Method. Available at : https://www.w3schools.com/python/ref_string_count.asp [Date Accessed: 24 March 2021].
+4. McKinney, T and Jsbueno. Stackoverflow.com. How many times a substring occurs. Available at: https://stackoverflow.com/questions/8899905/how-many-times-a-substring-occurs [Date Accessed: 25 March 2021].
+4. Pythonexamples.org. 2020. How To Count Number Of Characters In Text File? – 2 Python Examples. [online] Available at: https://pythonexamples.org/python-count-number-of-characters-in-text-file/ [Accessed 29 March 2020].
 
 # Task 8:
 
@@ -266,9 +290,56 @@ Write a program called plottask.py that displays a plot of the functions f(x)=x,
 Some marks will be given for making the plot look nice.
 
 ### Code:
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    # x-axis values:
+    x=np.arange(0.0,4.0,1.0) #range of 1-4; steps of 1
+    # y-axis values:
+    y1 = x     # f(x)
+    y2 = x**2  # g(x)
+    y3 = x**3  # h(x)
+
+    #plotting the points
+    plt.plot(y1, 'd-m', lw = 2, ms = 6, mec = 'hotpink', mfc = 'pink', label='f(x)')
+    plt.plot(y2, 'd:c', lw = 2, ms = 6, mec = 'hotpink', mfc = 'pink', label='g(x)')
+    plt.plot(y3, 'd:b', lw = 2, ms = 6, mec = 'hotpink', mfc = 'pink', label='h(x)')
+    # above plots the point, and sets line color, line type, linewidth, the marker 
+    # The label adds the name of the line and works in conjunction with the following code:
+
+    plt.title('f(x)[f(x)=x], g(x)[g(x)=x**2] and h(x)[h(x)=x**3]') # adds the plot title
+    plt.xlabel('X-axis') # names x-axis
+    plt.ylabel('Y-axis') # names y-axis
+
+
+    plt.legend() # displays labels in plots above
+    plt.show() # Depicts graphic representation of the plot
+
+
+
 
 ### Explaining the Code:
+1. Matplotlib and NumPy are imported. "Matplotlib is a plotting library for Python. It is used along with NumPy to provide an environment that is an effective open source alternative for MatLab" (tutorialspoint).
+2. The x axis values are defined by code: `x=np.arange(0.0,4.0,1.0)`. The syntax is:  
+> numpy.arange([start, ]stop, [step, ], dtype=None) 
+Start is the first value in the array, in this case 0.0; Stop defines the end of the array and isn't a part of the array. Step is the spacing between two consecutive values in the array and the default is 1. dtype is the type of elements in the output of the array, the default is none if not specified as in my code (see Stojiljković).
+3. The y coordinates are determined as per the function given to plot: f(x)=x, g(x)=x<sup>2</sup> and h(x)=x<sup>3</sup>. Broken down into the three y axis plot points:   
+    y1 = x     # f(x)  
+    y2 = x**2  # g(x)  
+    y3 = x**3  # h(x)
+
+4. Next `plt.plot(y1, ...` is used to direct the program to plot each of the points. Within the brackets are customisable features such as colour, line with, line type, marker type, color, fill, etc. I used the fmt shortcut string notations to specify the marker which uses abbrevations to denote the marker-line-color `'d-m'`, but then specify more details such as line width `lw` , marker size `ms`, marker edge color `mec`, market fill color `mfc` and finally add a label. Customisation options were found at w3schools.
+5. I then added the plot title,  `plt.title()`, as well as axis labels, e.g. `plt.xlabel()`
+6.  The code then creates a legend `plt.legend()` which displays labels.
+7. Finally the code `plt.show()` depicts graphic representation of the plot causing the graph to pop up when the program runs.
 
 ### References:
-
+1. TutorialsPoint.com. 2021. *NumPy - Matplotlib.* Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm [Accessed 30 March 2020]
+2.  Stojiljković, Mirko. RealPython. 2021 *NumPy arange(): How to Use np.arange()* Available at: https://realpython.com/how-to-use-numpy-arange/ [Accessed 30 March 2020].
+3. w3schools.com 2021. *Matplotlib Markers* Available at: https://www.w3schools.com/python/matplotlib_markers.asp [Accessed 30 March 2020].
+4. w3schools.com 2021. *Matplotlib Plotting* Available at: https://www.w3schools.com/python/matplotlib_pyplot.asp [Accessed 30 March 2020]
+5. GeeksforGeeks.org *Graph Plotting in Python* Available at: https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/ [Accessed 30 March 2020]
+5. Solomon, Brad. Real Python. *Python Plotting With Matplotlib (Guide)* Available at: https://realpython.com/python-matplotlib-guide/ [Accessed 30 March 2020]
+7. Stackoverflow.2013. *How to label a line in matplotlib (python)?* Available at: https://stackoverflow.com/questions/17941083/how-to-label-a-line-in-matplotlib-python/17942066 [Accessed 30 March 2020]
+8. Matplotlib.org. 2021. *Pyplot tutorial* Available at: https://matplotlib.org/tutorials/introductory/pyplot.html [Accessed 30 March 2020]
 
