@@ -162,7 +162,9 @@ An example of running this program on a Thursday is given below.
 ### Explaining the Code:
 
 ### References:
-
+1. w3schools.com 2020. Python Dates. Available at: https://www.w3schools.com/python/python_datetime.asp. [Accessed 21 February 2021].
+2. Python Docs. 2021. Datetime Module. Available at: https://docs.python.org/3/library/datetime.html. [Accessed 06 April 2021]. 
+3. Sweigart, A. 2015. Automate the Boring Stuff with Python. San Francisco: No Starch Press.
 
 # Task 6:
 
