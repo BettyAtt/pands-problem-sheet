@@ -334,9 +334,8 @@ y3 = x**3  which represents  h(x)
 4. Next `plt.plot(y1, ...` is used to direct the program to plot each of the points. Within the brackets are customisable features such as colour, line with, line type, marker type, color, fill, etc. I used the fmt shortcut string notations to specify the marker which uses abbrevations to denote the marker-line-color `'d-m'`, but then specify more details such as line width `lw` , marker size `ms`, marker edge color `mec`, market fill color `mfc` and finally add a label. Customisation options were found at w3schools.
 5. I then added the plot title,  `plt.title()`, as well as axis labels, e.g. `plt.xlabel()`
 6.  The code then creates a legend `plt.legend()` which displays labels.
-7. Finally the code `plt.show()` depicts graphic representation of the plot causing the graph to pop up when the program runs.
-
-8. The plot output: ![Plot](Week08GraphOutput.png)
+7. Finally the code `plt.show()` depicts graphic representation of the plot causing the graph to pop up when the program runs. As shown below:
+ ![Plot](Week08GraphOutput.png)
 
 ### References:
 1. TutorialsPoint.com. 2021. *NumPy - Matplotlib.* Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm [Accessed 30 March 2020]
