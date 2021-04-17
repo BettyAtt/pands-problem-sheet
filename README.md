@@ -66,7 +66,7 @@ The output  is their weight divided by their height in metres squared.
 ___
 
 ### Task Description:
-Write a program that takes asks a user to input a string and outputs every second letter in reverse order.
+Write a program that asks a user to input a string and outputs every second letter in reverse order.
 
 >$ python secondstring.py  
 >Please enter a sentence: The quick brown fox jumps over the lazy dog.  
@@ -170,7 +170,7 @@ An example of running this program on a Thursday is given below.
         print("It is the weekend, yay!")
 
 ### Explaining the Code:
-1. Firstly, the python module date time is imported.
+1. Firstly, the python module datetime is imported.
 2. The code `today = datetime.date.today()` returns the date time object for the specified time today which returns time at current location.
 3. The variable weekDay returns the days of the weeks assigned integer values. The code `.isoweekday()` assigns Monday the value of 1, Tuesday the value of 2, etc. 
 4. This means we can use Python's built in logic such as greater than and less than to determine whether the current date is a week day or weekend. The code uses the code `if weekDay < 6` and `else:` to print out the appropriate responses. 
@@ -216,8 +216,8 @@ I suggest that you look at the newton method at estimating square roots.
         print("The approximate square root of {} is ".format(n) + str(round(answer,1)))
 
 ### Explaining the Code:
-1. The function is defined using the Newton method, as suggested in task prompt. The code relating to this method is largely influenced by  Sıddık Açıl's code although other sources were consulted and the method for defining a function was influenced A Whirlwind Guide to Python and w3schools. This source was influential as many other sources were focused on the mathematical elements of the equations rather than the code.
-2. The number of iterations were chosen as 5 as one-three iterations provide unreliable answers when I did several test runs of the program. E.g. One iteration of the square root of 14.5 results in 7.8. Two iterations results in 4.8. Three iterations results in Three iterations results in 3.9, four iternations and above result in 3.8. A number over 5 did not seem to return more accurate results as my tests were not dealing with long floaing numbers. Further research would be needed to determine the best number of iterations to use.
+1. The function is defined using the Newton method, as suggested in task prompt. The code relating to this method is largely influenced by  Sıddık Açıl's code although other sources were consulted and the method for defining a function was influenced *A Whirlwind Guide to Python* and w3schools. This source was influential as many other sources were focused on the mathematical elements of the equations rather than the code.
+2. The number of iterations were chosen as 5 as one-three iterations provide unreliable answers when I did several test runs of the program. E.g. One iteration of the square root of 14.5 results in 7.8. Two iterations results in 4.8. Three iterations results in 3.9, four iternations and above result in 3.8. A number over 5 did not seem to return more accurate results as my tests were not dealing with long floaing numbers. Further research would be needed to determine the best number of iterations to use.
 3. The newton formula is then run with code: `number = 0.5 * (number + a / number)`. This is based off the Newton Method algebra: x_(n+1) = 0.5 * (x_n +a / x_n) [see Açıl]. And the number is returned. 
 4. Now that Newton's method is defined, code is written asking for the user to input a positive integer: `n = float(input("Enter a positive number: "))`.
 5. To prevent a user from entering a negative integer, the following if condition is used:  
@@ -267,7 +267,7 @@ by Herman Melville. The text analysed began at Chapter 1  and the epilogue was i
 3. The text file is opened using the `with open` method of opening files in Python which automatically closes them when the program completes its run. The function returns the file in read mode `(txtfile, "r") as f` and refers to the txtfile as f.
 4.  The variable data is defined as reading the specified file.
 5. The python string count() method returns the number of occurences of the specified substring 'e' in the given string 'data' as freq. This is then repeated with "E" as freq2.
-6. These two counts are added together to get the combined number of times "e" and "E" occurs in the txt file and formatted as int. The problem did not specify whether to solve just for lowercase or uppercase, so a combination method was chosen and then individual counts for upper and lower case can easily be isolated.
+6. These two counts are added together to get the combined number of times "e" and "E" occurances in the txt file and formatted as int. The problem did not specify whether to solve just for lowercase or uppercase, so a combination method was chosen and the individual counts for upper and lower case can easily be isolated.
 7. This variable combo is printed out with a string explaining the significance of the number.
 8. In an early iternation I double checked the outputs for 'e' is 114114, and 'E' is 906 . The combined answer that prints out for my example txt document moby-dick.txt is 115020. 
 
@@ -335,6 +335,8 @@ y3 = x**3  which represents  h(x)
 5. I then added the plot title,  `plt.title()`, as well as axis labels, e.g. `plt.xlabel()`
 6.  The code then creates a legend `plt.legend()` which displays labels.
 7. Finally the code `plt.show()` depicts graphic representation of the plot causing the graph to pop up when the program runs.
+
+8. The plot output: ![Plot](Week08GraphOutput.png)
 
 ### References:
 1. TutorialsPoint.com. 2021. *NumPy - Matplotlib.* Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm [Accessed 30 March 2020]
