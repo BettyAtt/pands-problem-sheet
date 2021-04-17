@@ -278,7 +278,7 @@ by Herman Melville. The text analysed began at Chapter 1  and the epilogue was i
 2. Programiz.com. 2021. *Python String Count ()* Available at: https://www.programiz.com/python-programming/methods/string/count [Date Accessed: 25 March 2021].
 3. w3schools.com. 2021. *Python String count() Method.* Available at : https://www.w3schools.com/python/ref_string_count.asp [Date Accessed: 24 March 2021].
 4. McKinney, T and Jsbueno. Stackoverflow.com. *How many times a substring occurs.* Available at: https://stackoverflow.com/questions/8899905/how-many-times-a-substring-occurs [Date Accessed: 25 March 2021].
-4. Pythonexamples.org. 2020. *How To Count Number Of Characters In Text File? – 2 Python Examples.* [online] Available at: https://pythonexamples.org/python-count-number-of-characters-in-text-file/ [Accessed 29 March 2020].
+4. Pythonexamples.org. 2020. *How To Count Number Of Characters In Text File? – 2 Python Examples.* [online] Available at: https://pythonexamples.org/python-count-number-of-characters-in-text-file/ [Accessed 29 March 2021].
 
 # Task 8:
 
@@ -338,13 +338,13 @@ y3 = x**3  which represents  h(x)
  ![Plot](Week08GraphOutput.png)
 
 ### References:
-1. TutorialsPoint.com. 2021. *NumPy - Matplotlib.* Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm [Accessed 30 March 2020]
-2.  Stojiljković, Mirko. RealPython. 2021 *NumPy arange(): How to Use np.arange()* Available at: https://realpython.com/how-to-use-numpy-arange/ [Accessed 30 March 2020].
-3. w3schools.com 2021. *Matplotlib Markers* Available at: https://www.w3schools.com/python/matplotlib_markers.asp [Accessed 30 March 2020].
-4. w3schools.com 2021. *Matplotlib Plotting* Available at: https://www.w3schools.com/python/matplotlib_pyplot.asp [Accessed 30 March 2020]
-5. GeeksforGeeks.org *Graph Plotting in Python* Available at: https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/ [Accessed 30 March 2020]
-5. Solomon, Brad. Real Python. *Python Plotting With Matplotlib (Guide)* Available at: https://realpython.com/python-matplotlib-guide/ [Accessed 30 March 2020]
-7. Stackoverflow.2013. *How to label a line in matplotlib (python)?* Available at: https://stackoverflow.com/questions/17941083/how-to-label-a-line-in-matplotlib-python/17942066 [Accessed 30 March 2020]
-8. Matplotlib.org. 2021. *Pyplot tutorial* Available at: https://matplotlib.org/tutorials/introductory/pyplot.html [Accessed 30 March 2020]
+1. TutorialsPoint.com. 2021. *NumPy - Matplotlib.* Available at: https://www.tutorialspoint.com/numpy/numpy_matplotlib.htm [Accessed 30 March 2021]
+2.  Stojiljković, Mirko. RealPython. 2021 *NumPy arange(): How to Use np.arange()* Available at: https://realpython.com/how-to-use-numpy-arange/ [Accessed 30 March 2021].
+3. w3schools.com 2021. *Matplotlib Markers* Available at: https://www.w3schools.com/python/matplotlib_markers.asp [Accessed 30 March 2021].
+4. w3schools.com 2021. *Matplotlib Plotting* Available at: https://www.w3schools.com/python/matplotlib_pyplot.asp [Accessed 30 March 2021]
+5. GeeksforGeeks.org *Graph Plotting in Python* Available at: https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/ [Accessed 30 March 2021]
+5. Solomon, Brad. Real Python. *Python Plotting With Matplotlib (Guide)* Available at: https://realpython.com/python-matplotlib-guide/ [Accessed 30 March 2021]
+7. Stackoverflow.2013. *How to label a line in matplotlib (python)?* Available at: https://stackoverflow.com/questions/17941083/how-to-label-a-line-in-matplotlib-python/17942066 [Accessed 30 March 2021]
+8. Matplotlib.org. 2021. *Pyplot tutorial* Available at: https://matplotlib.org/tutorials/introductory/pyplot.html [Accessed 30 March 2021]
 9. TanUv90 YouTube Video. 2017. GitHub Readme Images Tutorial (screenshots in readmes).  Available at: https://www.youtube.com/watch?v=hHbWF1Bvgf4 [Accessed 17 April 2021]
 
