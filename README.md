@@ -335,7 +335,6 @@ y3 = x**3  which represents  h(x)
 5. I then added the plot title,  `plt.title()`, as well as axis labels, e.g. `plt.xlabel()`
 6.  The code then creates a legend `plt.legend()` which displays labels.
 7. Finally the code `plt.show()` depicts graphic representation of the plot causing the graph to pop up when the program runs.  
- As shown below:
  ![Plot](Week08GraphOutput.png)
 
 ### References:
