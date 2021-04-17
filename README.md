@@ -14,7 +14,7 @@ This ReadMe explains how the code used to complete the weekly tasks for GMIT's P
 
 ## Packages used in the completion of these problems.
 
-My code was written in Python using Conda 4.9.2 and tasks ran through the code editor VS Code Version 1.55.0 . All the code and documentation is stored publically on GitHub. Various modules and libraries were imported to complete the various tasks as indicated in the below code including importing Python's datetime module (Task 05) and numpy and matplotlib.pyploy (Task 08).
+My code was written in Python using Conda 4.9.2 and tasks ran through the code editor VS Code Version 1.55.0 . All the code and documentation is stored publically on GitHub. Various modules and libraries were imported to complete the various tasks as indicated in the below code including importing Python's datetime module (Task 05) and numpy and matplotlib.pyplot (Task 08).
 
 # Task 1:
 
